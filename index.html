@@ -1,2 +1,69 @@
-//this is the google homepage 
+<style>
+    header, footer {
+        display: flex;
+        flex-direction: row;
+        min-width: 950px;
+    }
+    header button {
+      border: 0;
+      background: transparent;
+    }
 
+    header .left-btns {
+        margin: 0 0 0 10px;
+        display: flex;
+    }
+
+    header .right-btns {
+        display: flex;
+        align-items: center; /*For a row, it tells CSS how to push the items in the entire row up or down within the container. */
+        justify-content: center; /* justify-content property aligned flex items along the main axis. For rows, the main axis is a horizontal line and for columns it is a vertical line. */
+        margin: 0 20px 0 auto;
+    }
+
+    header .grid-thumbnail {
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      margin: 0 15px 0 10px;
+    }
+    header .profile-thumbnail {
+        /* margin-top: 100px; */
+      width: 30px;
+      height: 30px;
+      border-radius: 40px;
+    }
+
+
+</style>
+<header>
+        <div class= "left-btns">
+            <button class="about-btn">About</button>
+            <button class="store-btn">Store</button>
+        </div>
+        <div class= "right-btns">
+            <button class="gmail-btn">Gmail</button>
+            <button class="images-btn">Images</button>
+            <img src="http://www.myiconfinder.com/uploads/iconsets/256-256-ed559f9ab4ee6cec08ffde71c58a68af-grid.png" alt="Grid menu" class="grid-thumbnail">
+    <img src="https://bjedrocha.com/images/posts/gmail-style-avatars/avatar.png" alt="Profile picture" class="profile-thumbnail">
+        </div>
+    
+</header>
+<main>
+
+    
+</main>
+<footer>
+
+    <!-- <div class="follow-btn">
+        <button>Follow</button>
+    </div> -->
+</footer>
+
+
+
+
+    <!-- <a href="" class="about">About</a>
+    <a href="" class="store">Store</a>
+    <a href="" class="gmail">Gmail</a>
+    <a href="" class="images">Images</a> -->
