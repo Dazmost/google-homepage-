@@ -20,6 +20,22 @@
         justify-content: center; /* justify-content property aligned flex items along the main axis. For rows, the main axis is a horizontal line and for columns it is a vertical line. */
         margin: 0 20px 0 auto;
     }
+    
+    header .left-btns .about-btn:hover{
+        text-decoration:underline;
+    }
+
+    header .left-btns .store-btn:hover{
+        text-decoration:underline;
+    }
+
+    header .right-btns .gmail-btn:hover{
+        text-decoration:underline;
+    }
+
+    header .right-btns .images-btn:hover{
+        text-decoration:underline;
+    }
 
     header .grid-thumbnail {
       width: 20px;
@@ -34,31 +50,89 @@
       border-radius: 40px;
     }
 
+    main{
+        display: flex;
+        flex-direction: column;
+        /* position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center; */
+    }
+    main .google-logo {
+        margin-top: 100px;
+        max-width: 100%;
+        align-self: center;
+        height: auto;
+    }
+    main .search-text{
+        align-self: center;
+        border-radius: 10px;
+        width: 500px;
+        height: 40px;
+        margin: 30px;
+    }
+
+    main .search-btns{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+    }
+
+    #lucky {
+        margin: 10px;
+    }
+
+    #search {
+        margin: 10px;
+    }
+
+    main button {
+      border: 0;
+      padding: 10px;
+      border-radius: 5px;
+      background:#eaeaead6;
+    }
+
+    main button:hover{
+        box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.24);
+    }
+
+    main .search-text:hover{
+        box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.24);
+    }
+
 
 </style>
 <header>
-        <div class= "left-btns">
-            <button class="about-btn">About</button>
-            <button class="store-btn">Store</button>
-        </div>
-        <div class= "right-btns">
-            <button class="gmail-btn">Gmail</button>
-            <button class="images-btn">Images</button>
-            <img src="http://www.myiconfinder.com/uploads/iconsets/256-256-ed559f9ab4ee6cec08ffde71c58a68af-grid.png" alt="Grid menu" class="grid-thumbnail">
-    <img src="https://bjedrocha.com/images/posts/gmail-style-avatars/avatar.png" alt="Profile picture" class="profile-thumbnail">
-        </div>
-    
+    <div class= "left-btns">
+        <button class="about-btn">About</button>
+        <button class="store-btn">Store</button>
+    </div>
+    <div class= "right-btns">
+        <button class="gmail-btn">Gmail</button>
+        <button class="images-btn">Images</button>
+        <img src="http://www.myiconfinder.com/uploads/iconsets/256-256-ed559f9ab4ee6cec08ffde71c58a68af-grid.png" alt="Grid menu" class="grid-thumbnail">
+        <img src="https://bjedrocha.com/images/posts/gmail-style-avatars/avatar.png" alt="Profile picture" class="profile-thumbnail">
+    </div> 
 </header>
 <main>
+<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo" class="google-logo">
+<input class="search-text" type="text"  required>
+<div class = "search-btns">
+    <button id=search type="submit">Google Search</button>
+    <div id=lucky>
+        <button type="submit">I'm Feeling Lucky</button>
+    </div>
+</div>
 
-    
 </main>
 <footer>
 
-    <!-- <div class="follow-btn">
-        <button>Follow</button>
-    </div> -->
 </footer>
+
+
 
 
 
@@ -67,3 +141,46 @@
     <a href="" class="store">Store</a>
     <a href="" class="gmail">Gmail</a>
     <a href="" class="images">Images</a> -->
+
+
+
+    <!-- Horizontal Navigation Bar Examples -->
+
+    <!-- https://www.w3schools.com/css/css_navbar.asp  -->
+<!-- 
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+       -->
+       <!-- ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      /* Change the link color to #111 (black) on hover */
+      li a:hover {
+        background-color: #111;
+      } -->
+    <!-- <ul>
+        <li><a href="default.asp">Home</a></li>
+        <li><a href="news.asp">News</a></li>
+        <li><a href="contact.asp">Contact</a></li>
+        <li><a href="about.asp">About</a></li>
+      </ul>  -->
