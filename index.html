@@ -76,8 +76,10 @@
             height: auto;
         }
         main .search-text{
+            border-width: thin;
+            border-color: rgb(241, 241, 241);
             align-self: center;
-            border-radius: 10px;
+            border-radius: 20px;
             width: 500px;
             height: 40px;
             margin: 30px;
@@ -100,7 +102,7 @@
         main button {
         border: 0;
         padding: 10px;
-        border-radius: 5px;
+        border-radius: 4px;
         background:#eaeaead6;
         }
 
@@ -198,6 +200,17 @@
             /* justify-content: center; justify-content property aligned flex items along the main axis. For rows, the main axis is a horizontal line and for columns it is a vertical line. */
         }
 
+        hr {
+            border: none;
+            margin: 0px;
+            width: 100vw;
+            /* margin-left: auto;
+            margin-right: auto; */
+            height: 1px;
+            background-color:rgb(114, 114, 114);
+            opacity: 0.2;
+        }
+
 
     </style>
 </head>
@@ -236,6 +249,10 @@
         <div class="country">  
             <p>Canada</p>
         </div>
+        <hr>
+        <hr style="position:absolute; margin-top: 5vh;">
+        <!-- <hr style = "color:black; z-index: 1;"> -->
+        <!-- <hr style="height:1px;border:none;color:#333;background-color:#333;" /> -->
         <div class="options">
             <div class="left-btns">
                 <a style = "padding-right:10px;" href="" class="option">Advertising</a>
